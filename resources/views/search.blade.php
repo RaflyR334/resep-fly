@@ -1,4 +1,3 @@
-{{-- show.blade.php --}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -158,7 +157,7 @@
         <div class="nav-left">
             <a href="{{url('')}}"><img src="{{asset('front/assets/img/logoo.png')}}" alt="logo"></a>
             <a href="{{url('')}}">Home</a>
-            <a href="#">Resep</a>
+            <a href="{{url('about')}}">About</a>
         </div>
         <div class="nav-right">
             @guest

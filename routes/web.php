@@ -35,10 +35,7 @@ Route::get('/', function () {
 })->name('recipes.searchForm');
 
 
-Route::get('/search', [FrontController::class, 'search'])->name('resep.search');
+Route::get('search', [FrontController::class, 'search'])->name('resep.search');
+Route::get('about', function () {
+    return view('about');})->name('about');
 
-
-// Route Frontend(depan)
-// Route::get('/', [FrontController::class, 'index']);
-// Route::get('resep',[FrontController::class, 'resep']);
-// Route::get('produk/{id}',[FrontController::class, 'show']);

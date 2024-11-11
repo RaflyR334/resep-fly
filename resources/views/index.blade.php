@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resep Makanan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
         * {
@@ -123,8 +124,8 @@
 
         /* Footer */
         .footer {
-            background: linear-gradient(135deg, #ff5722, #e64a19);
-            color: white;
+            background: linear-gradient(135deg, #ffffff, #ffffff);
+            color: #ff5722;
             text-align: center;
             padding: 30px 0;
             margin-top: 40px;
@@ -144,7 +145,7 @@
             margin-bottom: 15px;
         }
         .footer .social-icons a {
-            color: white;
+            color: #ff5722;
             font-size: 1.5rem;
             text-decoration: none;
             transition: color 0.3s;
@@ -164,7 +165,7 @@
     <div class="nav-left">
         <a href="{{url('')}}"><img src="{{asset('front/assets/img/logoo.png')}}" alt="logo"></a>
         <a href="{{url('')}}">Home</a>
-        <a href="#">Resep</a>
+        <a href="{{url('about')}}">About</a>
     </div>
     <div class="nav-right">
         @guest
@@ -203,7 +204,7 @@
         <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
         <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
     </div>
-    <p class="copyright">&copy; 2024 Situs Resep Kami. All rights reserved.</p>
+    <p class="copyright">&copy; 2024 Situs Resep Kami. Uhuyyyyy.</p>
 </div>
 
 </body>

@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
-    public function search(Request $request){
+    public function index() {
+        $resep = Resep::take(4)->get();
+        return view('index', compact('resep'));
+    }
 
+    public function search(Request $request)
+    {
     $request->validate([
         'query' => 'required|string|max:255',
     ]);
