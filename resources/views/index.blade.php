@@ -191,6 +191,16 @@
             <input type="text" name="query" placeholder="Telusuri resep..." required>
             <button type="submit">Search</button>
         </form>
+        <script>
+            function checkLogin() {
+                @guest
+                    alert('Anda harus login terlebih dahulu untuk melakukan pencarian!');
+                    window.location.href = "{{ url('login') }}";
+                    return false; // Prevent form submission
+                @endguest
+                return true; // Allow form submission
+            }
+        </script>
     </div>
 </div>
 

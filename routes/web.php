@@ -35,7 +35,7 @@ Route::get('/', function () {
 })->name('recipes.searchForm');
 
 
-Route::get('search', [FrontController::class, 'search'])->name('resep.search');
+Route::get('search', [FrontController::class, 'search'])->name('resep.search')->middleware('auth');
 Route::get('about', function () {
     return view('about');})->name('about');
 
